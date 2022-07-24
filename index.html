@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h3 id="title">Tip Calculator</h3>
+        </div>
+
+        <div class="wrapper">
+            <h3 id="bill" class="sub_heading">Bill total</h3>
+            <div class="input_container">
+                <span class="spans">₹</span>
+                <input onkeyup="calculateBill()" type="text" id="billTotalInput" placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h3 id="tip" class="sub_heading">Tip</h3>
+            <div class="input_container">
+                <span class="spans">%</span>
+                <input onkeyup="calculateBill()" id="billTotalInput" type="text" placeholder="10">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="total_people bottom_flex">
+                <h3 id="people" class="sub_heading">People</h3>
+                <div class="people_count">
+                    <button id="plus">+</button>
+                    <span class="spans" id="numberOfPeople">1</span>
+                    <button id="minus">-</button>
+                </div>
+            </div>
+
+            <div class="total_per_person bottom_flex">
+                <h3 class="sub_heading">Total Per Person</h3>
+                <span class="spans" id="perPersonTotal">₹0.00</span>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
