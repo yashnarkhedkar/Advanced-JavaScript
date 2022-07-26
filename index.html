@@ -27,7 +27,7 @@
             <h3 id="tip" class="sub_heading">Tip</h3>
             <div class="input_container">
                 <span class="spans">%</span>
-                <input onkeyup="calculateBill()" id="billTotalInput" type="text" placeholder="10">
+                <input onkeyup="calculateBill()" id="tipInput" type="text" placeholder="10">
             </div>
         </div>
 
@@ -35,15 +35,15 @@
             <div class="total_people bottom_flex">
                 <h3 id="people" class="sub_heading">People</h3>
                 <div class="people_count">
-                    <button id="plus">+</button>
+                    <button class="btns" onclick="increasePeople()">+</button>
                     <span class="spans" id="numberOfPeople">1</span>
-                    <button id="minus">-</button>
+                    <button class="btns" onclick="decreasePeople()">-</button>
                 </div>
             </div>
 
             <div class="total_per_person bottom_flex">
                 <h3 class="sub_heading">Total Per Person</h3>
-                <span class="spans" id="perPersonTotal">₹0.00</span>
+                <span class="spans" id="perPersonTotal"><b>₹0.00</b></span>
             </div>
         </div>
         
